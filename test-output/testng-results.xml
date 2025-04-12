@@ -1,47 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-11T18:50:33 IST" name="Suite" finished-at="2025-04-11T18:50:46 IST" duration-ms="13154">
+  <suite started-at="2025-04-12T14:26:33 IST" name="Suite" finished-at="2025-04-12T14:27:05 IST" duration-ms="32066">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@305b7c14]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-11T18:50:33 IST" name="TestFour" finished-at="2025-04-11T18:50:46 IST" duration-ms="13154">
-      <class name="runner.Runner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.Runner@305b7c14]" started-at="2025-04-11T18:50:33 IST" name="setUpClass" finished-at="2025-04-11T18:50:33 IST" duration-ms="325" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@1290c49]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-04-12T14:26:33 IST" name="TestTwo" finished-at="2025-04-12T14:27:02 IST" duration-ms="28873">
+      <class name="tests.TwoTest">
+        <test-method signature="testTwo()[pri:0, instance:tests.TwoTest@72ef8d15]" started-at="2025-04-12T14:26:33 IST" name="testTwo" finished-at="2025-04-12T14:27:01 IST" duration-ms="28094" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at tests.TwoTest.testTwo(TwoTest.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@305b7c14]" started-at="2025-04-11T18:50:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T18:50:46 IST" duration-ms="12760" status="PASS">
+        </test-method> <!-- testTwo -->
+      </class> <!-- tests.TwoTest -->
+    </test> <!-- TestTwo -->
+    <test started-at="2025-04-12T14:26:33 IST" name="TestThree" finished-at="2025-04-12T14:27:03 IST" duration-ms="29253">
+      <class name="tests.ThreeTest">
+        <test-method signature="testThree()[pri:0, instance:tests.ThreeTest@5f20155b]" started-at="2025-04-12T14:26:33 IST" name="testThree" finished-at="2025-04-12T14:27:03 IST" duration-ms="29185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testThree -->
+      </class> <!-- tests.ThreeTest -->
+    </test> <!-- TestThree -->
+    <test started-at="2025-04-12T14:26:33 IST" name="TestFour" finished-at="2025-04-12T14:27:03 IST" duration-ms="29892">
+      <class name="tests.FourTest">
+        <test-method signature="testFour()[pri:0, instance:tests.FourTest@74287ea3]" started-at="2025-04-12T14:26:33 IST" name="testFour" finished-at="2025-04-12T14:27:01 IST" duration-ms="27746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFour -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.FourTest@74287ea3]" started-at="2025-04-12T14:27:01 IST" name="close" finished-at="2025-04-12T14:27:03 IST" duration-ms="2063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- tests.FourTest -->
+    </test> <!-- TestFour -->
+    <test started-at="2025-04-12T14:26:33 IST" name="LoginTest" finished-at="2025-04-12T14:27:05 IST" duration-ms="32066">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:tests.LoginTest@295cf707]" started-at="2025-04-12T14:26:33 IST" name="openApp" finished-at="2025-04-12T14:26:59 IST" duration-ms="25677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@295cf707]" started-at="2025-04-12T14:26:59 IST" name="login" data-provider="getLoginData" finished-at="2025-04-12T14:27:05 IST" duration-ms="6024" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login with valid credentials"]]>
+                <![CDATA[badalsingh123456789@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Application Login"]]>
+                <![CDATA[Mynextpc@07]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Successfull]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@305b7c14]" started-at="2025-04-11T18:50:46 IST" name="tearDownClass" finished-at="2025-04-11T18:50:46 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="closure()[pri:0, instance:tests.LoginTest@295cf707]" started-at="2025-04-12T14:27:05 IST" name="closure" finished-at="2025-04-12T14:27:05 IST" duration-ms="292" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.Runner -->
-    </test> <!-- TestFour -->
+        </test-method> <!-- closure -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- LoginTest -->
   </suite> <!-- Suite -->
 </testng-results>
